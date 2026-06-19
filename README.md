@@ -81,3 +81,11 @@ llama.cpp
 EduLite AI can help make AI learning support more accessible to students and teachers in schools where internet access is unstable or unaffordable.
 
 The project shows how offline AI can be used practically in African education.
+
+## How to Run EduLite AI
+
+After cloning the repository, download the model:
+
+```bash
+chmod +x download_model.sh
+./download_model.sh
