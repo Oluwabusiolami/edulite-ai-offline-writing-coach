@@ -89,3 +89,37 @@ After cloning the repository, download the model:
 ```bash
 chmod +x download_model.sh
 ./download_model.sh
+```
+
+Build or install llama.cpp, then set the path to llama-cli:
+
+```bash
+export LLAMA_CLI="$HOME/llama.cpp/build/bin/llama-cli"
+```
+
+Run the EduLite AI app:
+
+```bash
+python3 app.py
+```
+
+The user can then choose from the following modes:
+
+1. Essay Feedback
+2. Creative Writing Helper
+3. Vocabulary Builder
+4. IGCSE ESL Writing Practice
+5. Teacher Feedback Mode
+6. Custom Prompt
+
+## Local Test Results
+
+EduLite AI was successfully tested offline on an ASUS 8GB laptop using Ubuntu through WSL.
+
+The following speeds were recorded:
+
+* Vocabulary Builder: 8.3 tokens/second generation speed
+* Essay Feedback: 9.1 tokens/second generation speed
+* Teacher Feedback Mode: 9.6 tokens/second generation speed
+
+Full benchmark notes are available in `BENCHMARK_RESULTS.md`.
