@@ -1,16 +1,21 @@
-# Model weights — never commit these to git
+# Do not upload downloaded AI model files
+
 model/*.gguf
 model/*.bin
 model/*.safetensors
 
-# macOS
-.DS_Store
+# Python cache files
 
-# Python
-__pycache__/
+**pycache**/
 *.pyc
-.venv/
 
-# Local profiler output
-submission.json
-audit.json
+# Environment files
+
+.env
+.venv/
+venv/
+
+# Benchmark/result temporary files
+
+*.log
+*.tmp
